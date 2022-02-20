@@ -1,8 +1,3 @@
-const { response } = require('express');
-
-
-
-
 
 dns = require('./dns.js')
 
