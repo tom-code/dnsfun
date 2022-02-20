@@ -2,8 +2,7 @@
 
 dgram = require('dgram');
 
-
-
+// convenience binary buffer parser
 class BParser {
     constructor(b) {
         this.buffer = b;
@@ -29,6 +28,7 @@ class BParser {
     }
 }
 
+// convenience binary buffer encoder
 class BEncoder {
     constructor(s) {
         this.buffer = Buffer.alloc(s);
@@ -65,10 +65,11 @@ class BEncoder {
 }
 
 
+// parse dns name from wire format
 function parseName(parser) {
     var name = [];
     var a = [];
-    while (parser.remains() > 2) {
+    while (parser.remains() > 1) {
         var size = parser.getuint8();
         if (size == 0) return name;
         var label = parser.getbytes(size);
@@ -77,6 +78,11 @@ function parseName(parser) {
     return name;
 }
 
+// encode dns name into wire format
+// accepts name in formats:
+//  string (dot separated)
+//  array of strings
+//  array of buffers
 function encName(encoder, name) {
     if (typeof name == 'string') {
         name = name.split('.');
