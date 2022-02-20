@@ -1,0 +1,22 @@
+{
+  "name": "dnsfun",
+  "version": "0.0.1",
+  "description": "Funny dns server",
+  "main": "dns.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tom-code/dnsfun.git"
+  },
+  "keywords": [
+    "dns"
+  ],
+  "author": "tom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tom-code/dnsfun/issues"
+  },
+  "homepage": "https://github.com/tom-code/dnsfun#readme"
+}
