@@ -1,5 +1,4 @@
-
-dns = require('./dns.js')
+dns = require('dnsfun')
 
 var server = dns.Create();
 server.on_message((request) => {
