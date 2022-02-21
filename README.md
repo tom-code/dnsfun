@@ -1,8 +1,11 @@
 # dnsfun
-funny dns server
+small embeddable dns server
 
-example use
-```
+## install library
+npm install dnsfun
+
+## example use
+```javascript
 dns = require('dnsfun')
 
 var server = dns.Create();
