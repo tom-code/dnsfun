@@ -1,7 +1,7 @@
 {
   "name": "dnsfun",
-  "version": "0.0.2",
-  "description": "Funny dns server",
+  "version": "0.0.4",
+  "description": "Small embeddable dns server",
   "main": "dns.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
